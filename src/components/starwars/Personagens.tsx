@@ -1,4 +1,4 @@
-import {Check} from 'lucide-react'
+import {Clapperboard} from 'lucide-react'
 
 interface PersonagensProps {
 	personagens: any[];
@@ -27,7 +27,7 @@ export default function Personagens(props: PersonagensProps) {
 						<td className="p-2">{p.mass}</td>
 						<td className="p-2">
               <button onClick={() => props.selecionar(p)} className="bg-blue-500/70 px-3 py-1 rounded hover:bg-blue-700/70">
-                <Check size={20} />
+                <Clapperboard size={20} />
               </button>
             </td>
 					</tr>
