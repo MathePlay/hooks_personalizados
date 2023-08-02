@@ -1,7 +1,10 @@
 import Filmes from "@/components/starwars/Filmes";
 import Personagens from "@/components/starwars/Personagens";
 import Background from "@/components/starwars/background";
+import ContadorContext from "@/data/contexts/ContadorContext";
 import useStarWars from "@/data/hooks/useStarWars";
+import Link from "next/link";
+import { useContext } from "react";
 
 export default function PaginaStarWars() {
 	const { processando, personagens, filmes, voltar, selecionarPersonagem } = useStarWars();
@@ -19,6 +22,7 @@ export default function PaginaStarWars() {
 			) : (
 				<h1>Dados não encontrados</h1>
 			)}
+		
 		</div>
 	);
 }
